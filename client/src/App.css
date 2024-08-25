@@ -1,0 +1,35 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e5ecf3;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Header Styles */
+header {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  flex-shrink: 0;
+}
+
+/* Content Container: Sidebar and Main Content */
+.content-container {
+  display: flex;
+  flex: 1;
+}
+
+/* Main Content Styles */
+.main-content {
+  flex: 1;
+  padding-top: 1rem;
+
+  overflow-y: auto;
+}

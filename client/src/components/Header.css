@@ -1,0 +1,48 @@
+/* Header.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  margin-left: 60px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-bottom: 4px solid #6c63ff;
+}
+
+.header-left .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.login-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  margin-right: 20px;
+  cursor: pointer;
+  color: #555;
+}
+
+.join-btn {
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.join-btn:hover,
+.login-btn:hover {
+  opacity: 0.8;
+}

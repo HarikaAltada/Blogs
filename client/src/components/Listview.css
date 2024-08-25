@@ -1,0 +1,146 @@
+/* ListView.css */
+.blog-header {
+  margin: 0 auto;
+  max-width: 1420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  font-family: "Arial", sans-serif;
+}
+.list-view-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 60px;
+  border-radius: 10px;
+  font-family: "Arial", sans-serif;
+}
+
+.list-view-container h1 {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.logo {
+  width: 100%;
+  height: auto; /* This ensures the aspect ratio is maintained */
+  max-height: 580px; /* Set a maximum height for the image */
+  margin-left: 75px;
+  object-fit: cover; /* Adjust how the image is scaled within the defined dimensions */
+}
+
+.list-view-container a.create-post-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.list-view-container a.create-post-link:hover {
+  background-color: #0056b3;
+}
+
+.list-view-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.list-view-container li {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.list-view-container li h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.list-view-container li p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.list-view-container li a.read-more {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.list-view-container li a.read-more:hover {
+  text-decoration: underline;
+}
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+  color: #6c63ff;
+  font-size: 1.2rem;
+}
+
+.edit-icon:hover {
+  color: #0056b3;
+}
+
+.delete-icon:hover {
+  color: #ff4d4d;
+}
+.search-bar-container {
+  margin-left: 10px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: -100px; /* Adjust this value to position the search bar */
+  z-index: 1; /* Ensure the search bar is above the image */
+}
+
+.search-bar {
+  width: 600px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.search-bar::placeholder {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.search-icon {
+  position: absolute;
+  left: 68%;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #333;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.footer {
+  margin-left: 70px;
+}
