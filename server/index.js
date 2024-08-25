@@ -1,10 +1,10 @@
-
-require("dotenv").config(); // Ensure this is at the top to load environment variables
+require("dotenv").config(); // Ensure this is at the top
 
 const mongoose = require("mongoose");
 const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
+
 const postRoutes = require("./routes/auth");
 const commentRoutes = require("./routes/comments");
 
@@ -16,12 +16,20 @@ app.use(bodyParser.json());
 
 // Connect to MongoDB
 mongoose
-  .connect(process.env.MONGODB_URI)
+  .connect(process.env.MONGODB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
   .then(() => console.log("MongoDB connected"))
   .catch((err) => {
     console.error("MongoDB connection error:", err);
     process.exit(1); // Exit process with failure
   });
+
+// Root route
+app.get("/", (req, res) => {
+  res.send("Welcome to the blog API");
+});
 
 // Routes
 app.use("/posts", postRoutes);
